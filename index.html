@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Times New Roman, sans-serif;
+            background: grey;
+        }
+
+        .header {
+            background: black;
+            color:white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .card {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+    box-shadow: 0 0 10px rgb(255, 115, 0),
+                0 0 20px rgb(0, 255, 47),
+                0 0 40px rgb(0, 255, 153);
+  border-radius: 20px;
+          
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: black;
+
+        }
+
+        .btn {
+            margin-top: 10px;
+        }
+
+        .btn button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            background: lightgreen;
+            color: white;
+           cursor: pointer;
+            margin: 5px;
+        }
+        
+        .progress {
+            background: black;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background: rgb(0, 255, 76);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">My Profile</div>
+
+<div class="container">
+
+    <div class="card profile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkkM1VHDVnpgsODnHLBSsHnbcjV32CORa0Rw&s" alt="profile">
+        <h3>Agung Syarif Hidayatullah</h3>
+        <p>SMK An Nur</p>
+        <p>Depok</p>
+        <div class="btn">
+            <button>Follow</button>
+            <button>Message</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Data Diri</h3>
+        <p>Full Name: Agung Syarif Hidayatullah</p>
+        <p>Email: gungsarr10@gmail.com</p>
+        <p>Phone: 08123456789</p>
+        <p>Address: Depok</p>
+    </div>
+
+    <div class="card">
+        <h3>Social Media</h3>
+        <p>Website: gungsarr.com</p>
+        <p>Instagram: @gxngsxrr_10</p>
+    </div>
+
+    <div class="card">
+        <h3>Project</h3>
+
+        <p>HTML</p>
+        <div class="progress">
+            <div class="progress-bar" style="width: 80%;"></div>
+        </div>
+        <p>CSS</p>
+        <div class="progress">
+          <div class="progress-bar" style="width:95%;"></div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="progress">
+            <div class="progress-bar" style="width: 70%;"></div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
